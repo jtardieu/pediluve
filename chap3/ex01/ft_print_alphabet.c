@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <jtardieu@student.42mulhouse.fr>    +#+  +:+       +#+        */
+/*   By: jtardieu <jtardieu@student.42mulhouse.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/03 17:02:58 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/03 17:02:58 by marvin           ###   ########.fr       */
+/*   Created: 2025/09/03 17:04:30 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/04 14:54:43 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
