@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtardieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/05 11:56:45 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/05 12:03:11 by jtardieu         ###   ########.fr       */
+/*   Created: 2025/09/05 12:57:07 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/05 12:57:15 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-void	ft_swap(int *a, int *b);
+
+int ft_strlen(char *str);
 /*
 int main()
-{
-	int a = 1;
-	int b = 2;
-	int *c = &a;
-	int *d = &b;
-	ft_swap(c ,d);
-	printf("a = %d b = %d \n",a,b);
+{ 
+    int a ;
+    char *phrase = "bonjour";
+    a = ft_strlen(phrase);
+    printf("il y a %d",a);
 }
 */
-
-void	ft_swap(int *a, int *b)
+int ft_strlen(char *str)
 {
-	int	c;
-
-	c = *a;
-	*a = *b;
-	*b = c;
+    int i = 0;
+    while (str[i]!='\0')
+    {
+    i++; 
+    }
+    return(i);
 }
+
