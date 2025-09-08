@@ -1,0 +1,58 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jtardieu <jtardieu@student.42mulhouse.f    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/09/07 20:41:40 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/07 20:41:40 by jtardieu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h> 
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+int		ft_len(char *src);
+/*
+int main ()
+{
+	char *trop_bien;
+	char *chien = NULL;
+	unsigned int taille = 14 ;
+
+	printf("\n%d: affichage final devrait etre: <<%s>>`\n\n", __LINE__, chien);
+
+	ft_strncpy(trop_bien,chien,taille);
+
+	printf("\n%d: affichage final trop bien\n\t`%s`\n", __LINE__, trop_bien);
+}
+*/
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	int	i;
+
+	i = 0;
+	if (src != NULL)
+	{
+		dest[ft_len(src)];
+		while (src[i] != '\0' && i != n)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+	}
+	dest[i] = '\0';
+}
+
+int	ft_len(char *src)
+{
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
