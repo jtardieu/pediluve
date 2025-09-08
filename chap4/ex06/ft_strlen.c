@@ -10,25 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+// #include <stdio.h>
+int	ft_strlen(char *str);
 
-int ft_strlen(char *str);
-/*
-int main()
-{ 
-    int a ;
-    char *phrase = "bonjour";
-    a = ft_strlen(phrase);
-    printf("il y a %d",a);
-}
-*/
-int ft_strlen(char *str)
+// int main()
+// { 
+//     int a ;
+//     char *phrase = "bonjourawgas";
+//     a = ft_strlen(phrase);
+//     printf("il y a %d",a);
+// }
+int	ft_strlen(char *str)
 {
-    int i = 0;
-    while (str[i]!='\0')
-    {
-    i++; 
-    }
-    return(i);
-}
+	int	i;
 
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}

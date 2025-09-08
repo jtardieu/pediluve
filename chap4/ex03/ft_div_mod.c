@@ -12,20 +12,16 @@
 
 //#include <stdio.h>
 void	ft_div_mod(int a, int b, int *div, int *mod);
-/*
-int main()
-{
-	int div;
-	int mod;
-	int a = 21;
-	int b = 21;
 
-
-	ft_div_mod(a,b,&div,&mod);
-	printf("%d / %d = %d son modulo est %d",a,b,div,mod);
-}
-*/
-
+// int main()
+// {
+// 	int div;
+// 	int mod;
+// 	int a = 21;
+// 	int b = 21;
+// 	ft_div_mod(a,b,&div,&mod);
+// 	printf("%d / %d = %d son modulo est %d",a,b,div,mod);
+// }
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;

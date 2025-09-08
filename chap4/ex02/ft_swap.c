@@ -10,20 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+// #include <stdio.h>
 void	ft_swap(int *a, int *b);
-/*
-int main()
-{
-	int a = 1;
-	int b = 2;
-	int *c = &a;
-	int *d = &b;
-	ft_swap(c ,d);
-	printf("a = %d b = %d \n",a,b);
-}
-*/
 
+// int main()
+// {
+// 	int a = 1;
+// 	int b = 2;
+// 	int *c = &a;
+// 	int *d = &b;
+// 	ft_swap(c ,d);
+// 	printf("a = %d b = %d \n",a,b);
+// }
 void	ft_swap(int *a, int *b)
 {
 	int	c;

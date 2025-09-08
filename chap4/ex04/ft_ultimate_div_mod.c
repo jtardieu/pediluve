@@ -10,21 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+// #include <stdio.h>
 void	ft_ultimate_div_mod(int *a, int *b);
-/*
-int main()
-{
 
-	int a = 21;
-	int b = 21;
-	printf("%d / %d",a,b);
-
-	ft_ultimate_div_mod(&a,&b);
-	printf("= %d on modulo est %d",a,b);
-}
-*/
-
+// int main()
+// {
+// 	int a = 21;
+// 	int b = 21;
+// 	printf("%d / %d",a,b);
+// 	ft_ultimate_div_mod(&a,&b);
+// 	printf("= %d on modulo est %d",a,b);
+// }
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	div;
