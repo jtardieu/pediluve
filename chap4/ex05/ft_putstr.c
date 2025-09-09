@@ -5,19 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtardieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/08 15:11:48 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/08 15:11:52 by jtardieu         ###   ########.fr       */
+/*   Created: 2025/09/09 14:26:32 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/09 14:26:43 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_putstr(char *str);
-// int main()
-// { 
-//     char *phrase = "bonjourgASfA GAEGAE";
-//     ft_putstr(phrase);
-// }
+/*
+int main()
+{ 
+    char *phrase = "bonjourgASfA GAEGAE";
+    ft_putstr(phrase);
+}
+*/
 
 void	ft_putstr(char *str)
 {
