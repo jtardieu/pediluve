@@ -12,15 +12,16 @@
 #include <unistd.h>
 
 void	ft_is_negative(int n);
-
-//int	main()
-//{
-//	ft_is_negative(-2);
-//}
+/*
+int	main()
+{
+	ft_is_negative(0);
+}
+*/
 
 void	ft_is_negative(int n)
 {
-	if (n <= 0)
+	if (n < 0)
 	{
 		write(1, "N", 1);
 	}
