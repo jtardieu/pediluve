@@ -12,20 +12,24 @@
 
 //#include <stdio.h>
 char	*ft_strcpy(char *dest, char *src);
-/*
-int main()
-{
-	char *test;
-	char *chien = "wouf";
-	*ft_strcpy(test,chien);
-	printf("%s",chien);
-}
-*/
 
+// int	main()
+// {
+// 	char test[]="wgf";
+// 	char *chien = "chien";
+// 	ft_strcpy(test, chien);
+// 	printf("%s",test);
+// }
 char	*ft_strcpy(char *dest, char *src)
 {
-	char	*tab;
+	int	i;
 
-	tab = dest;
-	dest = src;
+	i = 0;
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = src[i];
+	return (dest);
 }
