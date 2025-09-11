@@ -10,36 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+// #include <stdio.h>
 int	ft_str_is_printable(char *str);
 int	is_printable(char src);
 
-//int main()
-//{
-//	char *bruh ="esgfseg" ;
-//	int rep=ft_str_is_alpha(bruh);
-
-//	if (rep==0)
-//		printf("oui\n");
-//	else	
-//		printf("non\n");
-//}
-
+// int main()
+// {
+// 	char *bruh ="";
+// 	int rep=ft_str_is_printable(bruh);
+// 	if (rep==0)
+// 		printf("non %d\n",rep);
+// 	else	
+// 		printf("oui %d\n",rep);
+// }
 int	ft_str_is_printable(char *str)
 {
 	int	i;
 
 	i = 0;
-	if (str != NULL)
+	while (str[i] != '\0')
 	{
-		while (str[i] != '\0')
-		{
-			if (is_printable(str[i]) == 1)
-				return (1);
-			i++;
-		}
-		if (str[0] != '\0')
+		if (is_printable(str[i]) == 1)
 			return (0);
+		i++;
 	}
 	return (1);
 }

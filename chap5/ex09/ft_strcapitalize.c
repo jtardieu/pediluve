@@ -3,16 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luflores <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jtardieu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/09 10:51:09 by luflores          #+#    #+#             */
-/*   Updated: 2025/09/09 10:51:13 by luflores         ###   ########.fr       */
+/*   Created: 2025/09/11 14:43:17 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/11 14:43:21 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <unistd.h>
+// #include <stdio.h>
+int		whatis(char a);
+char	*ft_strcapitalize(char *str);
 
-int	wat(char a)
+// int main(void)
+// {
+// 	char strb[] = "hi, how are you? 42words forty-two; fifty+and+one";
+// 	ft_strcapitalize(&strb[0]);
+// 	int i = 0;
+// 	printf("%s",strb);
+// }
+int	whatis(char a)
 {
 	if (65 <= a && a <= 90)
 		return (0);
@@ -34,28 +43,15 @@ char	*ft_strcapitalize(char *str)
 	{
 		if (type == 3)
 		{
-			if (wat(str[i]) == 1)
+			if (whatis(str[i]) == 1)
 				str[i] -= 32;
 		}
 		if (type == 2 || type == 1 || type == 0)
 		{
-			if (wat(str[i]) == 0)
+			if (whatis(str[i]) == 0)
 				str[i] += 32;
 		}
-		type = wat(str[i]);
+		type = whatis(str[i]);
 	}
 	return (str);
 }
-
-// int main(void)
-// {
-// 	char strb[] = "ordre de. fou furax a 8t+eAf";
-// 	ft_strcapitalize(&strb[0]);
-// 	int i = 0;
-
-// 	while (strb[i] != '\0')
-// 	{
-// 	write(1,&strb[i],1);
-// 	i++;
-// 	}
-// }

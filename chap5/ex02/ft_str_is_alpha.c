@@ -10,42 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 int	ft_str_is_alpha(char *str);
 int	is_alpha(char src);
 
-int main()
-{
-	char *bruh ="esgfseg" ;
-	int rep=ft_str_is_alpha(bruh);
-	if (rep==0)
-		printf("non\n");
-	else	
-		printf("oui\n");
-}
+// int main()
+// {
+// 	char *bruh ="esgfsADg" ;
+// 	int rep=ft_str_is_alpha(bruh);
+// 	if (rep==0)
+// 		printf("non %d\n",rep);
+// 	else	
+// 		printf("oui %d\n",rep);
+// }
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
 
 	i = 0;
-
 	while (str[i] != '\0')
 	{
 		if (is_alpha(str[i]) == 1)
 			return (0);
 		i++;
 	}
-	if (str[0] != '\0')
-		return (1);
-	return (0);
+	return (1);
 }
 
 int	is_alpha(char src)
 {
 	if ((src <= 'z' && src >= 'a') || (src <= 'Z' && src >= 'A'))
 	{
-		return (1);
+		return (0);
 	}
 	else
-		return (0);
+		return (1);
 }

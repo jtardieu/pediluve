@@ -10,36 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> 
+// #include <stdio.h> 
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
-
+/*
 int main ()
 {
-	char trop_bien[]=" ";
+	char trop_bien[99];
 	char *chien = "efqeg";
-	unsigned int taille = 14 ;
-
+	unsigned int taille = 49 ;
 	printf("\n%d: affichage final devrait etre: <<%s>>`\n\n", __LINE__, chien);
-
 	ft_strncpy(trop_bien,chien,taille);
-
-	printf("\n%d: affichage final trop bien\n\t`%s`\n", __LINE__, trop_bien);
+	printf("\n%d: affichage final trop bien\t`%s`\n", __LINE__, trop_bien);
 }
-
+*/
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
-
 	i = 0;
 	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-
-	while (i < n)
+	while (i < n )
 	{
 		dest[i] = 0;
 		i++;
