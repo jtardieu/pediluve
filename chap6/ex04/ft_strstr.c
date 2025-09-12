@@ -16,12 +16,38 @@ char *ft_strstr(char *str, char *to_find);
 int main()
 {
 	char manger[] = "test de grand mort activer";
-	char *trouver="mort";
-	ft_strstr(manger,trouver)
+	char *trouver="nd";
+	
+
+	printf("manger = \t%s\natouver = \t%s\n",manger,trouver);
+	char *find = ft_strstr(manger,trouver);
+	printf("trouver = \t%s\n",find);
 }
 
 char *ft_strstr(char *str, char *to_find)
 {
+	int	i;
+	int	j;
+	int bool;
+
+	i=-1;
+	while (str[++i])
+	{
+		j=0;
+		bool = 1;
+		while(to_find[j])
+		{
+			if (str[i+j]!=to_find[j])
+			{
+				bool = 0;
+				break;
+			}
+			j++;
+		}
+		
+		if(bool)
+			return (str+i);
+	}
+	return (0);
 
 }
-

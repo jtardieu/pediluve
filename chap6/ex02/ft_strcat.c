@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 char *ft_strcat(char *dest, char *src);
+int strlen(char *str);
 
 int main()
 {
@@ -21,5 +22,24 @@ int main()
 }
 char *ft_strcat(char *dest, char *src)
 {
+	size_t dest_len = strlen(dest);
+	size_t i;
 
+	i = -1;
+	while(src[i++] != '\0')
+		dest[dest_len + i] = src[i]
+
+	dest[dest_len + i] = '\0';
+	return (dest);
+}
+
+int ft_strlen(char *str)
+{
+	int i;
+
+	i = -1;
+	while(str[++i])
+	{
+	}
+	return (i);
 }
