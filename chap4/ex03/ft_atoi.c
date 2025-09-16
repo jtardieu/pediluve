@@ -15,8 +15,8 @@ int ft_atoi(char *str);
 
 int main(int ac , char **av)
 {
-	ac =1
-	ft_atoi(*av[1]);
+	ac =1;
+	ft_atoi(av[1]);
 }
 
 int	ft_atoi(char *str)
@@ -35,7 +35,7 @@ int	ft_atoi(char *str)
 	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			sign *= -;
+			sign *= -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
