@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 int ft_strlen(char *str);
 
-int main()
-{
-	char *bloublou = "bloubloublou";
-	int taille = ft_strlen(bloublou);	
-	printf("bloublou \t%s\ntaille \t%s",bloublou,taille);
-}
+// int main()
+// {
+// 	char *bloublou = "bloubloublou";
+// 	int taille = ft_strlen(bloublou);	
+// 	printf("bloubl \t%s\ntaille \t%d",bloublou,taille);
+// }
 
 int ft_strlen(char *str)
 {

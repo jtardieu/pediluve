@@ -13,14 +13,33 @@
 #include <unistd.h>
 
 void ft_putstr(char *str);
+int ft_strlen(char *str);
 
-int main()
+int main(int argc , char **argv)
 {
-	char *chien="wouaf";
+	argc = 1;
+	char *chien= *argv[1];
+		
 	ft_putstr(chien);
 }
 
-void ft_putstr(char *str);
+void ft_putstr(char *str)
 {
+	int i;
 
+	i = ft_strlen(str);
+	write(1,str,i);
+
+}
+
+
+int ft_strlen(char *str)
+{
+	int i;
+
+	i = -1;
+	while(str[++i])
+	{
+	}
+	return (i);
 }

@@ -13,27 +13,62 @@
 #include <unistd.h>
 
 void ft_putnbr(int nb);
+// int	ft_atoi(char *str);
 
-int main()
+
+int main(int ac , char **av)
 {
-	int a = 42;
-	ft_putnbr(a);
+	ac = 1;
+	ft_putnbr(-151584864);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
- 	char tmp[];
-	int parcours;
-    if (a < 0) 
+	if (nb == -2147483648)
 	{
-        write(1, "-", 1);
-    }
-    while (a != 0) 
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
 	{
-		parcours++
-        tmp[] = a % 10 + '0';
- 
-        write(1, &tmp, 1);
-        a /= 10;
-    }
+		write(1,"-",1);
+		nb *= -1;
+	}
+	if (nb < 10)
+	{
+		nb+='0';
+		write(1,&nb,1);
+	}
+	else
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
 }
+
+// int	ft_atoi(char *str)
+// {
+// 	int	i;
+// 	int	nb;
+// 	int	sign;
+
+// 	sign = 1;
+// 	nb = 0;
+// 	i = 0;
+// 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+// 	{
+// 		i++;
+// 	}
+// 	while (str[i] == '-' || str[i] == '+')
+// 	{
+// 		if (str[i] == '-')
+// 			sign *= -1;
+// 		i++;
+// 	}
+// 	while (str[i] >= '0' && str[i] <= '9')
+// 	{
+// 		nb = nb * 10 + (str[i] - '0');
+// 		i++;
+// 	}
+// 	return (nb * sign);
+// }
