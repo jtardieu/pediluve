@@ -10,31 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+// #include<stdio.h>
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
-int main()
-{
-	char chien[] =	"aziaa"; 
-	char wouf[] =	"zaqaz";
-	unsigned int taille = 1;
-	int result;
-	result = ft_strncmp(wouf,chien,taille);
-	printf("wouf est\t%s \nchien est\t%s\n",wouf,chien);
-	printf("result est \t%d",result);
-}
+// int main()
+// {
+// 	char chien[] =	"aziaa"; 
+// 	char wouf[] =	"zaiaa";
+// 	unsigned int taille = 3;
+// 	int result;
+// 	result = ft_strncmp(wouf,chien,taille);
+// 	printf("wouf est\t%s \nchien est\t%s\n",wouf,chien);
+// 	printf("result est \t%d",result);
+// }
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 	int				j;
 
 	i = -1;
+	j = 0;
 	while ((s1[++i] || s2[i]) && i < n)
 	{
 		if (s1[i] != s2[i])
 		{
-			j += s1[i] - s2[i];
+			return (s1[i] - s2[i]);
 		}
 	}
-	return (j);
+	return(0);
 }

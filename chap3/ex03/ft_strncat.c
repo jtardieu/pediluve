@@ -10,17 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
- #include <stdio.h>
+//  #include <stdio.h>
 char	*ft_strncat(char *dest, char *src, unsigned int nb);
 int		ft_strlen(char *str);
 
- int main()
-{
-	char bloup[999]="glouglou";
-	char *glouglou = "aboire";
-	unsigned int combien = 3;
-	ft_strncat(bloup,glouglou,combien); 	printf("%s\n",bloup);
-    }
+//  int main()
+// {
+// 	char bloup[999]="glouglou";
+// 	char *glouglou = "aboire";
+// 	unsigned int combien = 3;
+// 	ft_strncat(bloup,glouglou,combien); 	printf("%s\n",bloup);
+//     }
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {

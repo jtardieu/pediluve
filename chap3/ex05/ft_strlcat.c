@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// #include <stdio.h>
 char	ft_strlcat(char *dest, char *src);
 int		ft_strlen(char *str);
 
@@ -17,10 +18,10 @@ int		ft_strlen(char *str);
 // {
 // 	char bloup[999] = "donne";
 // 	char *glouglou = "aboire";
-// 	ft_strcat(bloup,glouglou);
+// 	ft_strlcat(bloup,glouglou);
 // 	printf("%s\n",bloup);
 // }
-char	ft_strcat(char *dest, char *src)
+char	ft_strlcat(char *dest, char *src)
 {
 	int	dest_len;
 	int	i;
@@ -30,7 +31,7 @@ char	ft_strcat(char *dest, char *src)
 	while (src[++i] != '\0')
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
-	return (dest);
+	return (*dest);
 }
 
 int	ft_strlen(char *str)
