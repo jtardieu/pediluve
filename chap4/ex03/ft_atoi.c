@@ -10,15 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_atoi(char *str);
+// #include <stdio.h>
+int	ft_atoi(char *str);
 
-int main(int ac , char **av)
-{
-	ac =1;
-	ft_atoi(av[1]);
-}
-
+// int main(int ac , char **av)
+// {
+// 	ac =1;
+// 	ft_atoi(av[1]);
+// }
 int	ft_atoi(char *str)
 {
 	int	i;
@@ -45,4 +44,3 @@ int	ft_atoi(char *str)
 	}
 	return (nb * sign);
 }
-

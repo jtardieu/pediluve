@@ -11,21 +11,20 @@
 /* ************************************************************************** */
 
 // #include <stdio.h>
-int ft_strlen(char *str);
+int	ft_strlen(char *str);
 
 // int main()
 // {
 // 	char *bloublou = "bloubloublou";
-// 	int taille = ft_strlen(bloublou);	
+// 	int taille = ft_strlen(bloublou);
 // 	printf("bloubl \t%s\ntaille \t%d",bloublou,taille);
 // }
-
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = -1;
-	while(str[++i])
+	while (str[++i])
 	{
 	}
 	return (i);

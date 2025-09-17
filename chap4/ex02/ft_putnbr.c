@@ -10,34 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_putnbr(int nb);
+// #include <unistd.h>
+void	ft_putnbr(int nb);
 // int	ft_atoi(char *str);
 
-
-int main(int ac , char **av)
-{
-	ac = 1;
-	ft_putnbr(-151584864);
-}
-
+// int main(int ac , char **av)
+// {
+// 	ac = 1;
+// 	ft_putnbr(0);
+// }
 void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
 	{
-		write(1, "-2147483648", 11);
+		write (1, "-2147483648", 11);
 		return ;
 	}
 	if (nb < 0)
 	{
-		write(1,"-",1);
+		write (1, "-", 1);
 		nb *= -1;
 	}
 	if (nb < 10)
 	{
-		nb+='0';
-		write(1,&nb,1);
+		nb += '0';
+		write (1, &nb, 1);
 	}
 	else
 	{
@@ -45,13 +42,11 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 }
-
 // int	ft_atoi(char *str)
 // {
 // 	int	i;
 // 	int	nb;
 // 	int	sign;
-
 // 	sign = 1;
 // 	nb = 0;
 // 	i = 0;
