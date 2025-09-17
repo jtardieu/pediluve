@@ -1,3 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/09/17 14:04:02 by jtardieu          #+#    #+#             */
+/*   Updated: 2025/09/17 15:53:38 by jtardieu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+// #include <stdio.h>
+int	isprime(int nb);
+int	ft_find_next_prime(int nb);
+
+// int main()
+// {
+// 	int i = 8;
+// 	printf("%d",ft_find_next_prime(i));
+// }
 
 int	isprime(int nb)
 {

@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtardieu <jtardieu@student.42mulhouse.f    +#+  +:+       +#+        */
+/*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 23:56:31 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 00:02:13 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/17 15:57:30 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 int	ft_iterative_power(int nb, int power);
 
-int main ()
-{
-	int nombe = 3 ;
-	int power = 3 ;
+// int main ()
+// {
+// 	int nombe = 3 ;
+// 	int power = 3 ;
 
-	int a = ft_iterative_power(nombe,power);
-	printf("%d wouf \n",a);
-}
+// 	int a = ft_iterative_power(nombe,power);
+// 	printf("%d wouf \n",a);
+// }
 
 int	ft_iterative_power(int nb, int power)
 {
