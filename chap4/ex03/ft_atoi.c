@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
+
 int	ft_atoi(char *str);
 
 // int main(int ac , char **av)
