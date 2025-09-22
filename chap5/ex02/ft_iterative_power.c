@@ -6,11 +6,12 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 23:56:31 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 15:57:30 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:14:03 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
+
 int	ft_iterative_power(int nb, int power);
 
 // int main ()

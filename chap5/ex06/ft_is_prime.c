@@ -6,11 +6,12 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 14:03:47 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 15:53:39 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:14:48 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
+
 int	ft_is_prime(int nb);
 // int ft_atoi(char *str);
 
@@ -18,6 +19,7 @@ int	ft_is_prime(int nb);
 // {
 // 	printf("premier %d\n",ft_is_prime(ft_atoi(av[1])));
 // }
+
 int	ft_is_prime(int nb)
 {
 	int	i;

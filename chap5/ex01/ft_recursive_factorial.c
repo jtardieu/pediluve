@@ -6,11 +6,12 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 23:22:35 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 15:57:43 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:13:41 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
+
 int	ft_recursive_factorial(int nb);
 
 // int main()

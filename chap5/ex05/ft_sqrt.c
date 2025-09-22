@@ -6,11 +6,11 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 13:43:37 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 15:55:46 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:14:36 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_sqrt(int nb);
 

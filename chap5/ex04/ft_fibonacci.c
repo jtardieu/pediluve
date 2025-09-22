@@ -6,11 +6,12 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 13:12:59 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/17 16:00:10 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:14:31 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
+
 int	ft_fibonacci(int index);
 
 // int main()
