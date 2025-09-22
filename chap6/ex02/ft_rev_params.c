@@ -6,31 +6,27 @@
 /*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 12:05:23 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/18 12:23:12 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/22 15:04:33 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 int	ft_strlen(char *str);
 
-int main(int ac,char **av)
+int	main(int ac, char **av)
 {
-	int i;
-	int a;
+	int	i;
+	int	a;
 
 	i = ac;
-	while (i-- != 1 )
+	while (i-- != 1)
 	{
 		a = ft_strlen(av[i]);
-
 		write (1, av[i], a);
-		write (1,"\n",1);
+		write (1, "\n", 1);
 	}
 }
-
-
 
 int	ft_strlen(char *str)
 {
