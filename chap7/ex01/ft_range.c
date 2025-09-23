@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtardieu <jtardieu@student.42mulhouse.f    +#+  +:+       +#+        */
+/*   By: jtardieu <jtardieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 12:19:50 by jtardieu          #+#    #+#             */
-/*   Updated: 2025/09/23 12:59:51 by jtardieu         ###   ########.fr       */
+/*   Updated: 2025/09/23 14:32:25 by jtardieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int main(int ac, char **av)
 	int i = -1;
 	int *tab;
 	int taille;
-	
+
 	taille = atoi(av[2]) - atoi(av[1]);
 	tab = ft_range(atoi(av[1]), atoi(av[2]));
-	
+
 	printf("%d\n\n", taille);
-	
+
 	while(++i != taille)
 		printf("%d\n",tab[i]);
 
